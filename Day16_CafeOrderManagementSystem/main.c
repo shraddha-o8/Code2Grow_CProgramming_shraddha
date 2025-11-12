@@ -8,11 +8,11 @@ int revenue = 0, itemsold = 0;
 int mostordered = 0, leastordered = 0;
 printf("========= Café Order Management System =========\n");
 printf("Menu:\n");
-printf("1. Coffee - ₹50\n");
-printf("2. Tea - ₹30\n");
-printf("3. Sandwich - ₹80\n");
-printf("4. Burger - ₹120\n");
-printf("5. Pastry - ₹60\n");
+printf("1. Coffee - Rs.50\n");
+printf("2. Tea - Rs.30\n");
+printf("3. Sandwich - Rs.80\n");
+printf("4. Burger - Rs.120\n");
+printf("5. Pastry - Rs.60\n");
 printf("Enter total number of customers: ");
 scanf("%d", &customers);
 if(customers < 1 || customers > 10)
@@ -47,7 +47,7 @@ printf("Invalid input! Try again.\n");
 j--;
 }
 }
-printf("Total Bill for Customer %d: ₹%d\n", i + 1, customertotal);
+printf("Total Bill for Customer %d: Rs.%d\n", i + 1, customertotal);
 revenue += customertotal;
 }
 mostordered = 0;
@@ -62,7 +62,7 @@ else if (leastordered != -1 && total_sold[i] > 0 && total_sold[i] < total_sold[l
 leastordered = i;
 }
 printf("\n========= Café Summary =========\n");
-printf("Total Revenue: ₹%d\n", revenue);
+printf("Total Revenue: Rs.%d\n", revenue);
 printf("Total Items Sold: %d\n", itemsold);
 if(mostordered == 0)
 printf("Most Ordered Item: Coffee\n");
